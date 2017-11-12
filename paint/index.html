@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+		<title>Mon Mini Paint</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+        <button id="stylo">Stylo</button>
+    	<button id="ligne">Ligne</button>
+        <button id="spray">Spray</button>
+    	<button id="gomme">Gomme</button>
+    	<button id="circle">Cercle</button>
+    	<button id="rectangle">Rectangle</button>
+    	<input type="color" id="color">
+    	<label for="remplissage">remplissage</label>
+    	<input id="remplissage" type="checkbox">
+    	<label for="largeur_pinceau">Largeur du pinceau :</label>
+    	<input id="largeur_pinceau" min="2" max="50" value="2 " type="range">
+        <input type='file' id="fileUpload" />
+    	<a id="download" download="image.png"><button type="button" onClick="download()">Download</button></a>
+  		<canvas id="paint" width="1200px" height="800px" ></canvas>
+  		<script type="text/javascript" src="paint.js"></script>
+    </body>
+</html>
